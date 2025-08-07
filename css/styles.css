@@ -23,4 +23,19 @@ header {
 nav .navbar-brand {
   font-family: "Playfair Display", serif;
   font-size: 1.5rem;
+} 
+
+.hero {
+    background: linear-gradient (to right, var (--verdepastel--), var (--rosado)); 
+    text-align: center;
+    padding: 4rem 1rem
+} 
+
+.hero img {
+    width: 150px;
+    height: 150px; 
+    object-fit: cover;
+    border-radius: 50%; 
+    border: 5px solid var(--blanco); 
+    animation: float 3s ease-in-out infinite;
 }
