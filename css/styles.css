@@ -6,11 +6,11 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-color: var(--gris-claro);
-  color: var(--negro); 
+  color: var(--negro);
   margin: 0;
-  padding:0;
+  padding: 0;
 }
 
 header {
@@ -19,7 +19,7 @@ header {
 }
 
 nav .navbar-brand {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 1.5rem;
 }
 
@@ -36,28 +36,29 @@ nav .navbar-brand {
   border-radius: 50%;
   border: 5px solid white;
   animation: float 3s ease-in-out infinite;
-} 
+}
 
 section {
   padding: 3rem 1rem;
 }
 
 .card {
-  transition: transform 0.3s ease; 
-  height: 100%; 
-  display: flex; 
+  transition: transform 0.3s ease;
+  height: 100%;
+  display: flex;
   flex-direction: column;
 }
 
 .card:hover {
   transform: scale(1.05);
-} 
+}
 
-card-img-fixed {
-  height: 200px; 
+.card-img-fixed {
+  height: 200px;
   object-fit: cover;
-} 
+}
 
+/* Igualar altura de las cards */
 .row > [class*="col-"] {
   display: flex;
   margin-bottom: 1.5rem;
@@ -68,10 +69,10 @@ card-img-fixed {
   display: flex;
   flex-direction: column;
 }
- 
+
 .carousel-img {
-  height: 300px; 
-  object-fit: cover; 
+  height: 300px;
+  object-fit: cover;
 }
 
 footer {
@@ -81,18 +82,31 @@ footer {
   padding: 1rem;
 }
 
-
+/* Animaciones */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-10px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes float {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0); }
-} 
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 
+/* Espacio entre testimonios y contacto */
 #testimonios {
   margin-bottom: 30px;
 }
